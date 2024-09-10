@@ -1,4 +1,6 @@
 <script setup>
+import Grid from './Grid.vue';
+
 
 
 defineProps({
@@ -13,6 +15,7 @@ defineProps({
 <template>
   <div class="tv-wrapper"
   >
+  <Grid />
 </div>
   
 </template>
@@ -20,13 +23,11 @@ defineProps({
 <style lang="scss" scoped>
 .tv-wrapper {
   height: 100%;
-  width: 100%;
-  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media only screen and (min-width: $tablet) {
-    position: unset;
-    height: 85%;
-    width: unset;
-    margin: 0 14%;
+
   }
 
 }

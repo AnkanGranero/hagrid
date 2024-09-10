@@ -1,12 +1,20 @@
 <script setup>
-import CTv from './components/CTv.vue';
+import Tv from './components/Tv.vue';
+import Grid from './components/Grid.vue';
 </script>
 
 <template>
-  <CTv />
+  <Tv />
 </template>
 
 <style lang="scss" >
+
+html {
+
+  height: 100%;
+  margin: 0;
+
+}
 body {
   -webkit-user-select: none;
   height: 100%;
@@ -24,4 +32,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+#app {
+  height: 100%;
+}
 </style>
